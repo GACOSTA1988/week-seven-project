@@ -17,13 +17,33 @@
 1. Test should correctly check if two words are anagrams
 
 * FAIL
-* EX INPUT: rock
-* EX OUTPUT: rack
+* EX INPUT: rock, rack
+* EX OUTPUT: These words are not anagrams
 
 * PASS
-* EX INPUT: rock
-* EX OUTPUT: rock
+* EX INPUT: rock, rock
+* EX OUTPUT: These words are anagrams"
 
+2. Test should correctly account for the possibility that words might have different cases but should still be anagrams
+
+* FAIL
+* EX INPUT: rock, Rack
+* EX OUTPUT: These words are not anagrams
+
+* PASS
+* EX INPUT: rock, Rock
+* EX OUTPUT: These words are anagrams
+
+
+3. Test should correctly account for the possibility that words might have different cases but should still be anagrams
+
+* FAIL
+* EX INPUT: eats, tea
+* EX OUTPUT: These words are not anagrams
+
+* PASS
+* EX INPUT: eat, tea
+* EX OUTPUT: These words are anagrams
 
 
 ## Setup/Installation Requirements

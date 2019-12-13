@@ -10,7 +10,7 @@ class Anagramer
 
     puts word_1_split
 
-    if word_1_split == word_2_split
+    if word_1_split.sort_by {|word_1_split| word_1_split } == word_2_split.sort_by {|word_2_split| word_2_split } 
       message = "These words are anagrams"
     else
       messege = "These words are not anagrams"
