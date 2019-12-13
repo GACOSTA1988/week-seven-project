@@ -14,15 +14,15 @@
 
 
 ## TDD SPECS
-1. Test should correctly 
+1. Test should correctly check if two words are anagrams
 
 * FAIL
-* EX INPUT: 
-* EX OUTPUT: 
+* EX INPUT: rock
+* EX OUTPUT: rack
 
 * PASS
-* EX INPUT: 
-* EX OUTPUT: 
+* EX INPUT: rock
+* EX OUTPUT: rock
 
 
 

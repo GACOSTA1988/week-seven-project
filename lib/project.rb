@@ -10,6 +10,5 @@ class Anagramer
     else
       messege = "These words are not anagrams"
     end
-      message
   end
 end
