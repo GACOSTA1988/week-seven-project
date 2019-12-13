@@ -5,9 +5,11 @@ class Anagramer
   end
   
   def anagram_checker
-    if input_word_1 == input_word_2
+    if @input_word_1 == @input_word_2
       message = "These words are anagrams"
+    else
+      messege = "These words are not anagrams"
     end
-    message
+      message
   end
 end
