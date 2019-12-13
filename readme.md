@@ -45,6 +45,15 @@
 * EX INPUT: eat, tea
 * EX OUTPUT: These words are anagrams
 
+4. Test should correctly check if the inputed words contain a vowel
+
+* FAIL
+* EX INPUT: eats, tea
+* EX OUTPUT: These words are not anagrams
+
+* PASS
+* EX INPUT: eat, tea
+* EX OUTPUT: These words are anagrams
 
 ## Setup/Installation Requirements
 

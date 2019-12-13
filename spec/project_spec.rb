@@ -22,3 +22,10 @@ describe('Anagramer#anagram_checker') do
     expect(anagram_checker_test3.anagram_checker).to(eq("These words are anagrams"))
   end
 end
+
+describe('Anagramer#anagram_checker') do
+  anagram_checker_test4 = Anagramer.new("rage","whcck")
+  it('should test to see if the inputed words contain a vowel') do
+    expect(anagram_checker_test4.anagram_checker).to(eq("Sorry but all entry words must contain a vowel, please try again"))
+  end
+end
