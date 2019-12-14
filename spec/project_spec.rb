@@ -24,7 +24,7 @@ require 'pry'
 # end
 
 describe('Anagramer#anagram_checker') do
-  anagram_checker_test4 = Anagramer.new("kkkk","kkk")
+  anagram_checker_test4 = Anagramer.new("kkkaak","kkk")
   it('should test to see if the inputed words contain a vowel') do
     expect(anagram_checker_test4.anagram_checker).to(eq("Sorry but all entry words must contain a vowel, please try again"))
   end
