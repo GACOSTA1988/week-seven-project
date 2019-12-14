@@ -16,10 +16,12 @@ class Anagramer
     puts word_2_vowels.length == 0 
     # word_2_vowels.length == 0 
     if word_1_vowels.length == 0 
+    binding.pry
     message = "Sorry but all entry words must contain a vowel, please try again"
     end
     if word_2_vowels.length == 0 
     message = "Sorry but all entry words must contain a vowel, please try again"
+    binding.pry
     end
     if word_1_split == word_2_split
       message = "These words are anagrams"
