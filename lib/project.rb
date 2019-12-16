@@ -1,4 +1,7 @@
 class Anagramer
+
+  attr_accessor(:input_word_1, :input_word_2)
+
   def initialize(input_word_1, input_word_2)
     @input_word_1 = sanitize_word(input_word_1)
     @input_word_2 = sanitize_word(input_word_2)
@@ -6,6 +9,7 @@ class Anagramer
     @inputs = [@input_word_1, @input_word_2]
   end
 
+  # THIS WILL STRIP PUNCTUATION AND SPACES
   def sanitize_word(word)
     word.upcase.gsub(/[^\w\s\d]/, '')
   end
@@ -27,7 +31,7 @@ class Anagramer
     end
   end
 
-  # word_1 example: ["C", "A", "T"]
+  # THIS WILL CHECK IF WORDS HAVE MATCHING LETTERS
   def antigram_checker(word_1, word_2)
     word_1.select { |letter| word_2.include?(letter) }       
   end

@@ -19,7 +19,7 @@ describe('Anagramer#anagram_checker') do
   end
 
   it('account for the possibility that words might have different cases but should still be anagrams') do
-    is_capital = Anagramer.new("rock","Rock")
+    is_capital = Anagramer.new("Tea","eat")
     expect(is_capital.anagram_checker).to(eq("These words are anagrams"))
   end  
 
