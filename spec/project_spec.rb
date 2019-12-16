@@ -8,6 +8,11 @@ describe('Anagramer#anagram_checker') do
     expect(are_anagrams.anagram_checker).to(eq("These words are anagrams"))
   end
 
+  it('should return "These phrases are anagrams" if words are anagrams') do
+    are_anagrams = Anagramer.new("School master","The classroom.")
+    expect(are_anagrams.anagram_checker).to(eq("These words are anagrams"))
+  end
+
   it('should return "These words are not anagrams" if words are not anagrams') do
     are_not_anagrams = Anagramer.new("tea","eater")
     expect(are_not_anagrams.anagram_checker).to(eq("These words are not anagrams"))
