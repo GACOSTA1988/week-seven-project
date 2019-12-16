@@ -12,7 +12,7 @@ class Anagramer
   
   # THIS WILL RETURN TRUE IF WORD HAS VOWELS
   def are_both_words 
-    are_words = @inputs.select {|input| input.match(/[AEIOU]/) }
+    are_words = @inputs.select { |input| input.match(/[AEIOU]/) }
     
     if are_words.length == 2
       return "both are words"
@@ -27,14 +27,24 @@ class Anagramer
     end
   end
 
+  # word_1 example: ["C", "A", "T"]
+  def antigram_checker(word_1, word_2)
+    word_1.select { |letter| word_2.include?(letter) }       
+  end
+  # THIS WILL CHECK INPUT WORDS ARE ANAGRAMS
   def anagram_checker
     word_1_split = @input_word_1.split('').sort
     word_2_split = @input_word_2.split('').sort
+    shared_letters = antigram_checker(word_1_split, word_2_split)
+
+    if shared_letters.length == 0 
+      return "These are antigrams"
+    end
 
     if word_1_split == word_2_split
       return "These words are anagrams"
-    else
-      return "These words are not anagrams"
     end
+
+    return "These words are not anagrams"
   end
 end
